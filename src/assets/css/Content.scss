@@ -1,0 +1,86 @@
+@import "mixins";
+@import "color";
+
+.content-information {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.form-personal-infor {
+    @include boxStyle();
+}
+
+.form-connect-social-network {
+    @include boxStyle();
+    width: 100%;
+    .btn-connect {
+        width: 100%;
+        @include flexRowStyle(space-between, center);
+    }
+}
+
+.box-change-password {
+    @include boxStyle();
+    justify-content: center;
+    .title {
+        color: $textPrimary;
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+
+.box-my-package {
+    @include flexColumnStyle(space-between, center);
+    width: 100%;
+    .title {
+        width: 96%;
+        @include flexRowStyle(flex-start, center);
+        justify-content: flex-start;
+        margin-bottom: 2%;
+        .text {
+            color: $textPrimary;
+            font-size: 20px;
+            font-weight: 500;
+        }
+    }
+}
+
+.form-my-package {
+    display: flex;
+    flex-direction: row;
+    padding-left: 15px;
+}
+
+.group-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    .btn-package {
+        padding: 5px;
+    }
+}
+
+.box-noti {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 50px;
+}
+
+.map-container {
+    height: 400px;
+}
+
+.map-box {
+    background-color: rgba(35, 55, 75, 0.9);
+    color: #fff;
+    padding: 6px 12px;
+    font-family: monospace;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 12px;
+    border-radius: 4px;
+    }

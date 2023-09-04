@@ -1,0 +1,27 @@
+.header {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    .app-bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .search-bar {
+        padding: 2px 4px;
+        display: flex;
+        align-items: center;
+        border-radius: 15px;
+    } 
+    .search-bar:hover {
+        border-style: solid;
+        border-color: rgba(22, 24, 35, 0.2);
+    }
+}
+
+.avatar.active {
+    .avatarActive {
+        background-color: #F58F00;
+    }
+}

@@ -1,0 +1,26 @@
+@import "mixins";
+@import "color";
+
+.product-in-stock {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.all-product {
+    margin: 5%;
+    width: 100%;
+    .btn-select-product {
+        width: 100%;
+        .btn-btn-select-product {
+            @include flexRowStyle(center, center);
+            .btn-btn {
+                margin: 5px;
+            }
+        }
+    }
+    .table-all-product {
+        width: 100%;
+        @include flexRowStyle(center, center);
+    }
+}

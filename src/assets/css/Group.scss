@@ -1,0 +1,129 @@
+@import "mixins";
+@import "color";
+
+.header-group {
+    @include flexRowStyle(center, flex-start);
+}
+
+.flex-group {
+    @include flexRowStyle(space-between, center);
+}
+
+.package-group {
+    @include flexRowStyle(flex-start, center);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.btn-invite {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-packages {
+    @include flexRowStyle(center, flex-start);
+}
+
+.title-group-spending {
+    @include flexRowStyle(flex-start, center);
+    .icon-title {
+        @include iconStyle();
+    }
+}
+
+.modal-content-group-spending {
+    display: flex;
+    flex-direction: row;
+}
+
+.modalModalSpending {
+    height: 100%;
+    padding-top: 10px;
+    overflow: auto;
+    padding-right: 10px;
+}
+
+#modalFormSpending::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
+}
+
+#modalFormSpending::-webkit-scrollbar-thumb {
+    background-color: #d9d9d9;
+}
+
+.name-bill {
+    width: 30%;
+    &:hover {
+        width: 100%;
+    }
+}
+
+.added-member {
+    width: 100%;
+    @include flexRowStyle(space-between, flex-end);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.form-add-member {
+    width: 100%;
+    @include flexRowStyle(space-between, flex-end);
+    //padding-top: 5px;
+    padding-bottom: 5px;
+    .added-member-success {
+        width: 100%;
+        @include flexRowStyle(space-between, center);
+        //padding: 5px 10px;
+        color: #000;
+        //box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+        //border-radius: 5px;
+    }
+}
+
+.box-repeat {
+    @include flexRowStyle(flex-start, center);
+    justify-content: flex-start;
+}
+
+.demo-simple-todos {
+    //background-color: #ffe0b3;
+    font-weight: 550;
+    margin-left: 10px;
+    border-radius: 20px;
+}
+
+.createCreateTask{
+    max-height: calc(100vh - 150px);
+    height: 100%;
+    overflow: auto;
+    padding-right: 10px;
+}
+
+#createTask::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
+}
+
+#createTask::-webkit-scrollbar-thumb {
+    background-color: #d9d9d9;
+}
+
+.btn-edit-task {
+    @include flexRowStyle(flex-end, center);
+    flex-wrap: wrap;
+
+    .btn-btn {
+        width: 120px;
+        margin: 5px;
+    }
+}
+
+.notification-empty {
+    width: 100%;
+    @include flexRowStyle(center, flex-start);
+
+    .text {
+        margin: 10px;
+    }
+}

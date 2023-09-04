@@ -1,0 +1,20 @@
+@import "color";
+@import "mixins";
+
+.interest-rate {
+  margin: 2%;
+  .title {
+    color: $textPrimary;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .summary {
+    font-style: italic;
+  }
+  .input-name {
+    width: 300px;
+    height: 50px;
+    padding: 5px;
+    font-size: large;
+  }
+}

@@ -1,0 +1,15 @@
+@import 'react-big-calendar/lib/sass/styles';
+@import "color";
+
+.rbc-event {
+    background-color: $textPrimary;
+  
+    .rbc-slot-selecting & {
+      cursor: inherit;
+      pointer-events: none;
+    }
+  
+    &.rbc-selected {
+      background-color: darken($textPrimary, 10%);
+    }
+  }

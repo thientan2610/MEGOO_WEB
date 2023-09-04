@@ -1,0 +1,65 @@
+@import "color";
+@import "mixins";
+
+.containerPackage {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 3%;
+}
+
+.item {
+  @include flexRowStyle(center, center);
+  height: 30px;
+}
+
+.btn {
+  @include flexColumnStyle(center, center);
+}
+
+.interest-rate {
+  margin: 2%;
+  .title {
+    color: $textPrimary;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .summary {
+    font-style: italic;
+  }
+  .box-interest-rate {
+    margin: 10px;
+    justify-content: flex-start;
+    .box-textfield-1 {
+      margin: 10px;
+      @include flexColumnStyle(space-between, flex-start);
+    }
+  }
+  .title-1 {
+    font-size: 22px;
+    font-weight: bold;
+    color: $textPrimary;
+  }
+  .table {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    border-radius: 10px;
+    .table-cell-1 {
+        font-size: 16px;
+        font-weight: 800;
+    }
+    .table-cell-2 {
+        font-size: 16px;
+        color: $tableCell;
+    }
+    .table-cell-3 {
+        font-size: 16px;
+        color: $textPrimary;
+        font-weight: 700;
+    }
+  }
+
+  .btn-btn-handle {
+    width: 100%;
+    @include flexRowStyle(flex-end, center);
+  }
+}

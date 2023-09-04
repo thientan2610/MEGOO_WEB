@@ -1,0 +1,53 @@
+.d-flex-stock {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.flex-colum-stock {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.file-image {
+    width: 100%;
+    height: auto;
+}
+
+.title-stock {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    .btn-btn {
+        margin: 5px;
+    }
+}
+
+.input-modal-description {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.name-image-stock {
+    padding: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.box-edit-stock {
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.btn-edit-stock {
+    opacity: 0.75;
+}
+
+.btn-edit-stock:hover {
+    opacity: 1;
+}

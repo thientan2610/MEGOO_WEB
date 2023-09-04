@@ -1,0 +1,92 @@
+@import "mixins";
+@import "color";
+
+
+.funding-box {
+    @include flexRowStyle(space-between, center);
+    .icon-title{
+        font-size: 50px;
+        color: $textPrimary;
+        padding-right: 15px;
+    }
+    .title-group-funding {
+        @include flexRowStyle(flex-start, center);
+    }
+}
+
+.form-group-funding {
+    max-height: calc(100vh - 200px);
+    padding-top: 10px;
+    padding-right: 10px;
+    overflow: auto;
+  }
+  
+  #formFormFunding::-webkit-scrollbar {
+    width: 6px;
+    background-color: #f5f5f5;
+  }
+  
+  #formFormFundings::-webkit-scrollbar-thumb {
+    background-color: #d9d9d9;
+  }
+
+.form-group-funding {
+    .name-funding {
+        width: 30%;
+        &:hover {
+            width: 100%;
+        }
+    }
+
+    .box-group-funding {
+        @include flexRowStyle(space-between, center);
+        .title {
+            margin-right: 5px;
+            min-width: 100px;
+        }
+    }
+
+    .form-control-radio {
+        margin-top: 5px;
+        width: 100%
+    }
+
+    .radio-end-input {
+        @include flexRowStyle(flex-start, center);
+        .text {
+            margin-right: 5px;
+        }
+    }
+
+    .form-funding-btn {
+        @include flexRowStyle(flex-end, center);
+    }
+}
+
+.funding-detail {
+    max-width: 100%;
+    // box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    // border-radius: 10px;
+    // background-color: #fff;
+    padding: 20px;
+    .funding-detail-summary {
+        @include flexRowStyle(space-between, center);
+    }
+    .funding-detail-money {
+        #input-example {
+            height: 56px !important;
+        }
+        @include flexColumnStyle(flex-start, stretch);
+        margin: 5px;
+        .icon {
+            font-size: 30px;
+            margin-right: 10px
+        }
+    }
+    .funding-detail-members-name {
+        @include flexRowStyle(flex-start, center);
+        .name {
+            margin-left: 10px;
+        }
+    }
+}
